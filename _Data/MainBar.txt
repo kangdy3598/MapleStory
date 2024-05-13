@@ -1,0 +1,251 @@
+"filename": "KeyConfigBack1.png"
+"frame": {"x": 0,"y": 0,"w": 660,"h": 512, "a": 0, "b": 0,} 
+"filename": "KeyConfigBack2.png"
+"frame": {"x": 660,"y": 0,"w": 640,"h": 479, , "a": 0, "b": 23,}
+"filename": "KeyConfigBack3.png"
+"frame": {"x": 1300,"y": 0,"w": 620,"h": 231, , "a": 0, "b": 68,}
+
+"filename": "Key0.png",
+"frame": {"x": 1896,"y": 294,"w": 24,"h": 9, "a": 9, "b": 9,}
+"filename": "Key1.png",
+"frame": {"x": 1965,"y": 252,"w": 14,"h": 9,"a": 9, "b": 9,}
+"filename": "Key2.png",
+"frame": {"x": 1978,"y": 401,"w": 17,"h": 9,"a": 9, "b": 9,}
+"filename": "Key3.png",
+"frame": {"x": 1979,"y": 389,"w": 17,"h": 9,"a": 9, "b": 9,}
+"filename": "Key4.png",
+"frame": {"x": 1949,"y": 216,"w": 17,"h": 9,"a": 9, "b": 9,}
+"filename": "Key5.png",
+"frame": {"x": 1920,"y": 216,"w": 17,"h": 9,"a": 9, "b": 9,}
+"filename": "Key6.png",
+"frame": {"x": 1949,"y": 225,"w": 17,"h": 9,"a": 9, "b": 9,}
+"filename": "Key7.png",
+"frame": {"x": 1949,"y": 252,"w": 16,"h": 9,"a": 9, "b": 9,}
+"filename": "Key8.png",
+"frame": {"x": 1949,"y": 234,"w": 17,"h": 9,"a": 9, "b": 9,}
+"filename": "Key9.png",
+"frame": {"x": 1949,"y": 243,"w": 17,"h": 9,"a": 9, "b": 9,}
+
+"filename": "Key10.png",
+"frame": {"x": 1919,"y": 330,"w": 21,"h": 9,"a": 9, "b": 9,}
+"filename": "Key11.png",
+"frame": {"x": 1980,"y": 330,"w": 18,"h": 9,"a": 9, "b": 9,}
+"filename": "Key12.png",
+"frame": {"x": 1940,"y": 330,"w": 21,"h": 9,"a": 9, "b": 9,}
+"filename": "Key13.png",
+"frame": {"x": 1879,"y": 296,"w": 7,"h": 6,"a": 9, "b": 9,}
+"filename": "Key14.png",
+"frame": {"x": 1984,"y": 306,"w": 7,"h": 9,"a": 9, "b": 9,}
+"filename": "Key15.png",
+"frame": {"x": 1985,"y": 358,"w": 10,"h": 9,"a": 9, "b": 9,}
+"filename": "Key16.png",
+"frame": {"x": 1986,"y": 367,"w": 10,"h": 9,"a": 9, "b": 9,}
+"filename": "Key17.png",
+"frame": {"x": 1988,"y": 376,"w": 10,"h": 9,"a": 9, "b": 9,}
+"filename": "Key18.png",
+"frame": {"x": 1937,"y": 216,"w": 10,"h": 9,"a": 9, "b": 9,}
+"filename": "Key19.png",
+"frame": {"x": 1966,"y": 216,"w": 10,"h": 9,"a": 9, "b": 9,}
+
+"filename": "Key20.png",
+"frame": {"x": 1979,"y": 288,"w": 9,"h": 9,}
+"filename": "Key21.png",
+"frame": {"x": 1966,"y": 225,"w": 10,"h": 9,}
+"filename": "Key22.png",
+"frame": {"x": 1966,"y": 234,"w": 10,"h": 9,}
+"filename": "Key23.png",
+"frame": {"x": 1966,"y": 243,"w": 10,"h": 9,}
+"filename": "Key24.png",
+"frame": {"x": 1886,"y": 296,"w": 7,"h": 5,}
+"filename": "Key25.png",
+"frame": {"x": 1862,"y": 296,"w": 10,"h": 7,}
+"filename": "Key26.png",
+"frame": {"x": 1960,"y": 382,"w": 10,"h": 10,}
+"filename": "Key27.png",
+"frame": {"x": 1985,"y": 349,"w": 12,"h": 9,}
+"filename": "Key28.png",
+"frame": {"x": 1976,"y": 216,"w": 10,"h": 9,}
+"filename": "Key29.png",
+"frame": {"x": 1976,"y": 225,"w": 10,"h": 9,}
+
+"filename": "Key30.png",
+"frame": {"x": 1976,"y": 234,"w": 10,"h": 9,}
+"filename": "Key31.png",
+"frame": {"x": 1976,"y": 243,"w": 10,"h": 9,}
+"filename": "Key32.png",
+"frame": {"x": 1969,"y": 261,"w": 10,"h": 9,}
+"filename": "Key33.png",
+"frame": {"x": 1992,"y": 339,"w": 6,"h": 9,}
+"filename": "Key34.png",
+"frame": {"x": 1966,"y": 243,"w": 10,"h": 9,}
+"filename": "Key35.png",
+"frame": {"x": 1949,"y": 261,"w": 10,"h": 9,}
+"filename": "Key36.png",
+"frame": {"x": 1953,"y": 382,"w": 7,"h": 11,}
+"filename": "Key37.png",
+"frame": {"x": 1953,"y": 393,"w": 7,"h": 11,}
+"filename": "Key38.png",
+"frame": {"x": 1953,"y": 371,"w": 14,"h": 11,}
+"filename": "Key39.png",
+"frame": {"x": 1959,"y": 261,"w": 10,"h": 9,}
+
+"filename": "Key40.png",
+"frame": {"x": 1969,"y": 270,"w": 10,"h": 9,}
+"filename": "Key41.png",
+"frame": {"x": 1949,"y": 270,"w": 10,"h": 9,}
+"filename": "Key42.png",
+"frame": {"x": 1959,"y": 270,"w": 10,"h": 9,}
+"filename": "Key43.png",
+"frame": {"x": 1969,"y": 279,"w": 10,"h": 9,}
+"filename": "Key44.png",
+"frame": {"x": 1969,"y": 288,"w": 10,"h": 9,}
+"filename": "Key45.png",
+"frame": {"x": 1984,"y": 297,"w": 9,"h": 9,}
+"filename": "Key46.png",
+"frame": {"x": 1979,"y": 252,"w": 10,"h": 9,}
+"filename": "Key47.png",
+"frame": {"x": 1988,"y": 288,"w": 9,"h": 9,}
+"filename": "Key48.png",
+"frame": {"x": 1985,"y": 339,"w": 7,"h": 10,}
+"filename": "Key49.png",
+"frame": {"x": 1947,"y": 296,"w": 6,"h": 6,}
+
+"filename": "Key50.png",
+"frame": {"x": 1986,"y": 216,"w": 10,"h": 9,}
+"filename": "Key51.png",
+"frame": {"x": 1986,"y": 225,"w": 10,"h": 9,}
+"filename": "Key52.png",
+"frame": {"x": 1986,"y": 234,"w": 10,"h": 9,}
+"filename": "Key53.png",
+"frame": {"x": 1986,"y": 243,"w": 10,"h": 9,}
+"filename": "Key54.png",
+"frame": {"x": 1979,"y": 261,"w": 10,"h": 9,}
+"filename": "Key55.png",
+"frame": {"x": 1979,"y": 270,"w": 10,"h": 9,}
+"filename": "Key56.png",
+"frame": {"x": 1979,"y": 279,"w": 10,"h": 9,}
+"filename": "Key57.png",
+"frame": {"x": 1872,"y": 296,"w": 7,"h": 7,}
+"filename": "Key58.png",
+"frame": {"x": 1953,"y": 296,"w": 6,"h": 5,}
+"filename": "Key59.png",
+"frame": {"x": 1924,"y": 285,"w": 23,"h": 9,}
+
+"filename": "Key60.png",
+"frame": {"x": 1896,"y": 285,"w": 28,"h": 9,}
+"filename": "Key61.png",
+"frame": {"x": 1970,"y": 380,"w": 18,"h": 9,}
+"filename": "Key62.png",
+"frame": {"x": 1862,"y": 285,"w": 34,"h": 11,}
+"filename": "Key63.png",
+"frame": {"x": 1960,"y": 401,"w": 18,"h": 9,}
+"filename": "Key64.png",
+"frame": {"x": 1961,"y": 330,"w": 19,"h": 9,}
+"filename": "Key65.png",
+"frame": {"x": 1947,"y": 285,"w": 22,"h": 11,}
+"filename": "Key66.png",
+"frame": {"x": 1967,"y": 371,"w": 19,"h": 9,}
+"filename": "Key67.png",
+"frame": {"x": 1920,"y": 294,"w": 22,"h": 9,}
+"filename": "Key68.png",
+"frame": {"x": 1897,"y": 330,"w": 22,"h": 9,}
+"filename": "Key69.png",
+"frame": {"x": 1960,"y": 392,"w": 19,"h": 9,}
+
+"filename": "icon1.png",
+"frame": {"x": 1857,"y": 344,"w": 32,"h": 32,}
+"filename": "icon2.png",
+"frame": {"x": 1889,"y": 344,"w": 32,"h": 32,}
+"filename": "icon3.png",
+"frame": {"x": 1921,"y": 339,"w": 32,"h": 32,}
+"filename": "icon4.png",
+"frame": {"x": 1921,"y": 371,"w": 32,"h": 32,}
+"filename": "icon5.png",
+"frame": {"x": 1953,"y": 339,"w": 32,"h": 32,}
+
+"filename": "KeyConfigButton_Save_Normal.png",
+"frame": {"x": 1920,"y": 54,"w": 78,"h": 27,}
+"filename": "KeyConfigButton_Save_Pressed.png",
+"frame": {"x": 1920,"y": 81,"w": 78,"h": 27,}
+"filename": "KeyConfigButton_Save_MouseOver.png",
+"frame": {"x": 1920,"y": 27,"w": 78,"h": 27,}
+"filename": "KeyConfigButton_Save_Disabled.png",
+"frame": {"x": 1290,"y": 0,"w": 78,"h": 27,}
+
+"filename": "KeyConfigButton_Undo_Normal.png",
+"frame": {"x": 1897,"y": 303,"w": 87,"h": 27,}
+"filename": "KeyConfigButton_Undo_Pressed.png",
+"frame": {"x": 1862,"y": 410,"w": 87,"h": 27,}
+"filename": "KeyConfigButton_Undo_MouseOver.png",
+"frame": {"x": 1862,"y": 258,"w": 87,"h": 27,}
+"filename": "KeyConfigButton_Undo_Disabled.png",
+"frame": {"x": 1862,"y": 231,"w": 87,"h": 27,}
+
+"filename": "KeyConfigButton_QuickSlotSetting_Normal.png",
+"frame": {"x": 1920,"y": 162,"w": 76,"h": 27,}
+"filename": "KeyConfigButton_QuickSlotSetting_Pressed.png",
+"frame": {"x": 1920,"y": 189,"w": 76,"h": 27,}
+"filename": "KeyConfigButton_QuickSlotSetting_MouseOver.png",
+"frame": {"x": 1920,"y": 135,"w": 76,"h": 27,}
+"filename": "KeyConfigButton_QuickSlotSetting_Disabled.png",
+"frame": {"x": 1920,"y": 108,"w": 76,"h": 27,}
+
+"filename": "QuickSlotBack.png",
+"frame": {"x": 1300,"y": 304,"w": 557,"h": 67,}
+"filename": "QuickSlotCover.png",
+"frame": {"x": 1300,"y": 231,"w": 562,"h": 73,}
+"filename": "QuickSlotMessageBack.png",
+"frame": {"x": 1300,"y": 371,"w": 346,"h": 120,}
+
+"filename": "QuickSlotMesageCancel_Disabled.png",
+"frame": {"x": 1850,"y": 437,"w": 83,"h": 26,}
+"filename": "QuickSlotMesageCancel_MouseOver.png",
+"frame": {"x": 1844,"y": 463,"w
+
+"filename": "MainBar_Cover.png",
+"frame": {"x": 1646,"y": 371,"w": 204,"h": 70,}
+"filename": "MainBar_Back.png",
+"frame": {"x": 1646,"y": 441,"w": 198,"h": 37,}
+"filename": "MainBar_HP.png",
+"frame": {"x": 1646,"y": 478,"w": 171,"h": 13,}
+"filename": "MainBar_MP.png",
+"frame": {"x": 1817,"y": 489,"w": 171,"h": 13,}
+
+"filename": "MainBar_Number0.png",
+"frame": {"x": 1984,"y": 315,"w": 7,"h": 9,}
+"filename": "MainBar_Number1.png",
+"frame": {"x": 1942,"y": 294,"w": 5,"h": 9,}
+"filename": "MainBar_Number2.png",
+"frame": {"x": 1991,"y": 306,"w": 7,"h": 9,}
+"filename": "MainBar_Number3.png",
+"frame": {"x": 1991,"y": 315,"w": 7,"h": 9,}
+"filename": "MainBar_Number4.png",
+"frame": {"x": 1989,"y": 252,"w": 7,"h": 9,}
+"filename": "MainBar_Number5.png",
+"frame": {"x": 1989,"y": 261,"w": 7,"h": 9,}
+"filename": "MainBar_Number6.png",
+"frame": {"x": 1989,"y": 270,"w": 7,"h": 9,}
+"filename": "MainBar_Number7.png",
+"frame": {"x": 1989,"y": 279,"w": 7,"h": 9,}
+"filename": "MainBar_Number8.png",
+"frame": {"x": 1850,"y": 371,"w": 7,"h": 9,}
+"filename": "MainBar_Number9.png",
+"frame": {"x": 1857,"y": 376,"w": 7,"h": 9,}
+
+": 83,"h": 26,}
+"filename": "QuickSlotMesageCancel_Normal.png",
+"frame": {"x": 660,"y": 479,"w": 83,"h": 26,}
+"filename": "QuickSlotMesageCancel_Pressed.png",
+"frame": {"x": 743,"y": 479,"w": 83,"h": 26,}
+
+"filename": "QuickSlotMesageOK_Disabled.png",
+"frame": {"x": 826,"y": 479,"w": 83,"h": 26,}
+"filename": "QuickSlotMesageOK_MouseOver.png",
+"frame": {"x": 909,"y": 479,"w": 83,"h": 26,}
+"filename": "QuickSlotMesageOK_Normal.png",
+"frame": {"x": 992,"y": 479,"w": 83,"h": 26,}
+"filename": "QuickSlotMesageOK_Pressed.png",
+"frame": {"x": 1075,"y": 479,"w": 83,"h": 26,}
+
+"filename": "QuickSlotSelect.png",
+"frame": {"x": 1857,"y": 304,"w": 40,"h": 40,}

@@ -1,0 +1,108 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="소스 파일">
+      <UniqueIdentifier>{4FC737F1-C7A5-4376-A066-2A32D752A2FF}</UniqueIdentifier>
+      <Extensions>cpp;c;cc;cxx;c++;cppm;ixx;def;odl;idl;hpj;bat;asm;asmx</Extensions>
+    </Filter>
+    <Filter Include="헤더 파일">
+      <UniqueIdentifier>{93995380-89BD-4b04-88EB-625FBE52EBFB}</UniqueIdentifier>
+      <Extensions>h;hh;hpp;hxx;h++;hm;inl;inc;ipp;xsd</Extensions>
+    </Filter>
+    <Filter Include="리소스 파일">
+      <UniqueIdentifier>{67DA6AB6-F800-4c08-8B7A-83BB121AAD01}</UniqueIdentifier>
+      <Extensions>rc;ico;cur;bmp;dlg;rc2;rct;bin;rgs;gif;jpg;jpeg;jpe;resx;tiff;tif;png;wav;mfcribbon-ms</Extensions>
+    </Filter>
+    <Filter Include="소스 파일\Engine">
+      <UniqueIdentifier>{40d11464-67a4-4beb-8ea6-e5109aa8a5fd}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Entity">
+      <UniqueIdentifier>{54c1a279-b523-44e2-a65b-5e0bfb2ccd55}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Entity\UI">
+      <UniqueIdentifier>{167cdf1f-80fa-4335-9e8b-d5078af28a4d}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Entity\Object">
+      <UniqueIdentifier>{b6f7d528-66de-4992-865f-a70f0ddae26c}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Entity\Object\Player">
+      <UniqueIdentifier>{34461e20-f925-433e-acbc-7dfa8562219c}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="_Script\main.cpp">
+      <Filter>소스 파일</Filter>
+    </ClCompile>
+    <ClCompile Include="_Script\Engine\System.cpp">
+      <Filter>소스 파일\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="_Script\Engine\Input.cpp">
+      <Filter>소스 파일\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="_Script\Entity\UI\Keyconfig.cpp">
+      <Filter>소스 파일\Entity\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="_Script\Engine\FileRead.cpp">
+      <Filter>소스 파일\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="_Script\Engine\Render.cpp">
+      <Filter>소스 파일\Engine</Filter>
+    </ClCompile>
+    <ClCompile Include="_Script\Entity\UI\UIManager.cpp">
+      <Filter>소스 파일\Entity\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="_Script\Entity\Entity.cpp">
+      <Filter>소스 파일\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="_Script\Entity\Object\ObjectManager.cpp">
+      <Filter>소스 파일\Entity\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="_Script\Entity\UI\SkillWindow.cpp">
+      <Filter>소스 파일\Entity\UI</Filter>
+    </ClCompile>
+    <ClCompile Include="_Script\Entity\Object\Player\Player.cpp">
+      <Filter>소스 파일\Entity\Object\Player</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="_Script\pch.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="_Script\stdafx.h">
+      <Filter>헤더 파일</Filter>
+    </ClInclude>
+    <ClInclude Include="_Script\Engine\System.h">
+      <Filter>소스 파일\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="_Script\Engine\Input.h">
+      <Filter>소스 파일\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="_Script\Entity\UI\Keyconfig.h">
+      <Filter>소스 파일\Entity\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="_Script\Engine\FileRead.h">
+      <Filter>소스 파일\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="_Script\Engine\Render.h">
+      <Filter>소스 파일\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="_Script\Entity\Entity.h">
+      <Filter>소스 파일\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="_Script\Entity\UI\UIManager.h">
+      <Filter>소스 파일\Entity\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="_Script\Entity\UI\InputKeyDefine.h">
+      <Filter>소스 파일\Entity\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="_Script\Entity\Object\ObjectManager.h">
+      <Filter>소스 파일\Entity\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="_Script\Entity\UI\SkillWindow.h">
+      <Filter>소스 파일\Entity\UI</Filter>
+    </ClInclude>
+    <ClInclude Include="_Script\Entity\Object\Player\Player.h">
+      <Filter>소스 파일\Entity\Object\Player</Filter>
+    </ClInclude>
+  </ItemGroup>
+</Project>
