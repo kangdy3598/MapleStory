@@ -81,3 +81,8 @@ void CUIManager::EnableUI(int _keyValue)
 		break;
 	}
 }
+
+void CUIManager::CheckMouseOver(WORD mouseX, WORD mouseY)
+{
+	m_CKeyconfig->CheckMouseOver(mouseX, mouseY);
+}

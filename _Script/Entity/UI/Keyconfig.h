@@ -35,8 +35,9 @@ public:
 	// _key값으로 몇번째 Slot인지 확인합니다.
 	int GetSlotKeyValue(int _key);
 	void SetEnable();
-
+	void CheckMouseOver(WORD mouseX, WORD mouseY);
 private:
+	void SetInitKeyValue();
 	void SetCenterPosition(SpriteInfo* _spriteInfo);
 
 	void InitSpriteInfo_BackGround(CFileRead* m_CFileRead);
@@ -45,6 +46,8 @@ private:
 
 	void Render_BackGround(HDC _mem1dc, HDC _mem2dc);
 	void Render_Icon(HDC _mem1dc, HDC _mem2dc);
+	void Render_Slot(HDC _mem1dc, HDC _mem2dc);
+
 	
 private:
 
@@ -62,6 +65,8 @@ private:
 	SpriteInfo m_KeySprite[70];
 	int m_KeySpriteSize = 10;
 
-	SlotInfo* m_SlotInfo;
+	SlotInfo m_SlotInfo[4];
+	SpriteInfo m_SlotSprite[4];
+	int m_SlotSpriteSize = 4;
 };
 

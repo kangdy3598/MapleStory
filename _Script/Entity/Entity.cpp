@@ -68,3 +68,8 @@ void CEntity::ProcessKeyInput(int _key)
 	m_CUIManager->EnableUI(keyValue);
 	m_CObjectManager->PlayAction(keyValue);
 }
+
+void CEntity::ProcessMouseMove(WORD mouseX, WORD mouseY)
+{
+	m_CUIManager->CheckMouseOver(mouseX, mouseY);
+}

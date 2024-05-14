@@ -18,6 +18,7 @@ public:
 
 	int GetSlotKeyValue(int _key);
 	void EnableUI(int _key);
+	void CheckMouseOver(WORD mouseX, WORD mouseY);
 public:
 
 private:

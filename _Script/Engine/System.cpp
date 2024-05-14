@@ -73,7 +73,7 @@ void CSystem::Run()
 
 bool CSystem::Update()
 {
-
+	m_CEntity->Update(m_CInput->GetKeyState());
 	return true;
 }
 
@@ -96,6 +96,7 @@ LRESULT CALLBACK CSystem::MessageHandler(HWND hwnd, UINT umsg, WPARAM wparam, LP
 		break;
 
 	case WM_MOUSEMOVE:
+		m_CEntity->ProcessMouseMove(LOWORD(lparam), HIWORD(lparam));
 		//InvalidateRect(hwnd, NULL, FALSE);
 		break;
 

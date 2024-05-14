@@ -17,6 +17,7 @@ public:
 	void Render(HWND _hwnd, RECT _rect);
 
 	void ProcessKeyInput(int _key);
+	void ProcessMouseMove(WORD mouseX, WORD mouseY);
 private:
 
 private:
