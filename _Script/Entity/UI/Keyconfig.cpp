@@ -176,9 +176,9 @@ void CKeyconfig::CheckMouseOver(WORD mouseX, WORD mouseY)
 	int sizeX = m_SlotSprite[0].spriteSize.x;
 	int sizeY = m_SlotSprite[0].spriteSize.y;
 
-	if (mouseX > positionX - sizeX && mouseX < positionX + sizeX,
+	if (mouseX > positionX - sizeX && mouseX < positionX + sizeX &&
 		mouseY > positionY - sizeY && mouseY < positionY + sizeY)
-		MessageBox(0, 0, 0, 0);
+		
 
 
 
