@@ -15,6 +15,7 @@ struct SlotInfo
 struct KeyInfo
 {
 	bool isKeyBinding = false; // 해당 키에 슬롯이 바인딩 되어 있는가 
+	POINT slotPosition = POINT();
 	int keyValue = 0;			   // 해당 키의 번호
 	SpriteInfo* spriteInfo = nullptr;   // 키 이미지 정보
 };
@@ -36,19 +37,22 @@ public:
 	int GetSlotKeyValue(int _key);
 	void SetEnable();
 	void CheckMouseOver(WORD mouseX, WORD mouseY);
+	void CheckMouseClicked();
+
 private:
 	void SetInitKeyValue();
 	void SetCenterPosition(SpriteInfo* _spriteInfo);
+	void SetSlotPosition(SlotInfo* _slotInfo);
 
 	void InitSpriteInfo_BackGround(CFileRead* m_CFileRead);
-	void InitSpriteInfo_Icon(CFileRead* m_CFileRead);
+	void InitSpriteInfo_Key(CFileRead* m_CFileRead);
 	void InitSpriteInfo_Slot(CFileRead* m_CFileRead);
 
 	void Render_BackGround(HDC _mem1dc, HDC _mem2dc);
-	void Render_Icon(HDC _mem1dc, HDC _mem2dc);
+	void Render_Key(HDC _mem1dc, HDC _mem2dc);
 	void Render_Slot(HDC _mem1dc, HDC _mem2dc);
 
-	
+	SlotInfo* CheckMousePosition(WORD mouseX, WORD mouseY);
 private:
 
 	int m_screenWidth;
@@ -63,10 +67,14 @@ private:
 	
 	KeyInfo m_KeyInfo[70];
 	SpriteInfo m_KeySprite[70];
-	int m_KeySpriteSize = 10;
+	int m_KeySpriteSize = 70;
 
-	SlotInfo m_SlotInfo[4];
-	SpriteInfo m_SlotSprite[4];
-	int m_SlotSpriteSize = 4;
+	SlotInfo m_SlotInfo[5];
+	SpriteInfo m_SlotSprite[5];
+	int m_SlotSpriteSize = 5;
+
+	SlotInfo* m_nowClickedSlot = nullptr;
+	SlotInfo* m_nowMouseOverSlot = nullptr;
+
 };
 

@@ -1,7 +1,7 @@
 #pragma once
-#include "../../../stdafx.h"
-#include "../../UI/InputKeyDefine.h"
-class CPlayer
+#include "../ObjectManager.h"
+
+class CPlayer : public CObjectManager
 {
 public:
 	CPlayer();
@@ -11,14 +11,17 @@ public:
 	void Initialize();
 	void Release();
 
-	void Update(bool _keyboardState[256]);
-	void Render(HDC mem1dc, HDC mem2dc);
+	void Update() override;
+	void Render (HDC _mem1dc, HDC _mem2dc) override;
 
 	int GetSlotKeyValue(int _key);
 	void PlayAction(int _keyValue);
+	
 public:
 
 private:
+	HBITMAP spriteAtlas = NULL;
 
+	POINT m_nowPosition = POINT();
 };
 

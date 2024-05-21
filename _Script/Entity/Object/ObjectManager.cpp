@@ -1,14 +1,11 @@
-#include "../../stdafx.h"
 #include "ObjectManager.h"
 
 CObjectManager::CObjectManager()
 {
-	m_CPlayer = nullptr;
 }
 
 CObjectManager::CObjectManager(const CObjectManager&)
 {
-	m_CPlayer = nullptr;
 }
 
 CObjectManager::~CObjectManager()
@@ -17,29 +14,29 @@ CObjectManager::~CObjectManager()
 
 void CObjectManager::Initialize()
 {
-	m_CPlayer = new CPlayer;
-	if (!m_CPlayer)
-		return;
-	m_CPlayer->Initialize();
 }
 
 void CObjectManager::Release()
 {
-	SAFE_DELETE(m_CPlayer);
+	//SAFE_DELETE(m_CPlayer);
 }
 
-void CObjectManager::Update()
+void CObjectManager::Render(HDC mem1dc, HDC mem2dc)
 {
-
-}
-
-void CObjectManager::Render(HWND hwnd, RECT rect)
-{
-
 }
 
 void CObjectManager::PlayAction(int _keyValue)
 {
-	m_CPlayer->PlayAction(_keyValue);
+	//m_CPlayer->PlayAction(_keyValue);
+}
+
+void CObjectManager::ChangeState(CStateManager* _stateManager, CObjectManager* _obj)
+{
+	if (m_nowState != nullptr)
+		m_nowState->Exit();
+
+	m_nowState = _stateManager;
+	m_nowState->ob = _obj;
+	m_nowState->Enter();
 }
 

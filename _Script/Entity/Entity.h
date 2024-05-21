@@ -1,6 +1,6 @@
 #pragma once
 #include "../Engine/Render.h"
-#include "Object/ObjectManager.h"
+#include "Object/Player/Player.h"
 #include "UI/UIManager.h"
 
 class CEntity : public CRender
@@ -18,6 +18,7 @@ public:
 
 	void ProcessKeyInput(int _key);
 	void ProcessMouseMove(WORD mouseX, WORD mouseY);
+	void ProcessMouseDown();
 private:
 
 private:

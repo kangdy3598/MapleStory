@@ -97,11 +97,12 @@ LRESULT CALLBACK CSystem::MessageHandler(HWND hwnd, UINT umsg, WPARAM wparam, LP
 
 	case WM_MOUSEMOVE:
 		m_CEntity->ProcessMouseMove(LOWORD(lparam), HIWORD(lparam));
-		//InvalidateRect(hwnd, NULL, FALSE);
+		InvalidateRect(hwnd, NULL, FALSE);
 		break;
 
 	case WM_LBUTTONDOWN:
-		//InvalidateRect(hwnd, NULL, FALSE);
+		m_CEntity->ProcessMouseDown();
+		InvalidateRect(hwnd, NULL, FALSE);
 		break;
 
 	case WM_DESTROY:

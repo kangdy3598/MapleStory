@@ -86,3 +86,8 @@ void CUIManager::CheckMouseOver(WORD mouseX, WORD mouseY)
 {
 	m_CKeyconfig->CheckMouseOver(mouseX, mouseY);
 }
+
+void CUIManager::CheckMouseClicked()
+{
+	m_CKeyconfig->CheckMouseClicked();
+}

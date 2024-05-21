@@ -10,3 +10,5 @@
 #define KEY_NUM_ACTION_JUMP 4
 //--------------------------------------
 
+#include "Entity/Object/Player/State/PlayerIdle.h"
+#include "Entity/Object/Player/State/PlayerWalk.h"

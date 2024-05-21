@@ -1,9 +1,10 @@
 // SLOT
 #define SLOTSIZE 4
-#define SLOT_ACTION_JUMP		 0
-#define SLOT_WINDOW_KEYCONFIG    1
-#define SLOT_ACTION_NPC		     2
-#define SLOT_WINDOW_SKILL	     3
+#define SLOT_WINDOW_ITEM         0
+#define SLOT_WINDOW_SKILL		 1
+#define SLOT_WINDOW_KEYCONFIG    2
+#define SLOT_ACTION_PICKUP	     3
+#define SLOT_ACTION_JUMP	     4
 
 // KEY
 #define KEY_A				 65

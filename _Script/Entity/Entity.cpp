@@ -27,7 +27,7 @@ void CEntity::Initialize(int _screenWidth, int _screenHeight)
 		return;
 	m_CFileRead->Initialize(L"_Data/MainBar.txt");
 
-	m_CObjectManager = new CObjectManager;
+	m_CObjectManager = new CPlayer;
 	if (!m_CObjectManager)
 		return;
 
@@ -49,6 +49,7 @@ void CEntity::Release()
 void CEntity::Update(bool _keyboardState[256])
 {
 	m_CUIManager->Update(_keyboardState);
+	m_CObjectManager->Update();
 }
 
 void CEntity::Render(HWND _hwnd, RECT _rect)
@@ -56,8 +57,10 @@ void CEntity::Render(HWND _hwnd, RECT _rect)
 	StartRender(_hwnd, _rect);
 
 	m_CUIManager->Render(mem1dc, mem2dc);
+	m_CObjectManager->Render(mem1dc, mem2dc);
 	BitBlt(m_hdc, 0, 0, _rect.right, _rect.bottom, mem1dc, 0, 0, SRCCOPY);
 
+	
 	EndRender(_hwnd);
 }
 
@@ -72,4 +75,9 @@ void CEntity::ProcessKeyInput(int _key)
 void CEntity::ProcessMouseMove(WORD mouseX, WORD mouseY)
 {
 	m_CUIManager->CheckMouseOver(mouseX, mouseY);
+}
+
+void CEntity::ProcessMouseDown()
+{
+	m_CUIManager->CheckMouseClicked();
 }

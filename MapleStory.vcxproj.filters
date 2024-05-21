@@ -28,6 +28,12 @@
     <Filter Include="소스 파일\Entity\Object\Player">
       <UniqueIdentifier>{34461e20-f925-433e-acbc-7dfa8562219c}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Entity\Object\Player\State">
+      <UniqueIdentifier>{fe843db3-c8a4-4501-b114-e4cca06d94b4}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="소스 파일\Entity\Object\Enemy">
+      <UniqueIdentifier>{44b7de91-2ff8-47b5-907a-8e8d7b35f234}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="_Script\main.cpp">
@@ -62,6 +68,18 @@
     </ClCompile>
     <ClCompile Include="_Script\Entity\Object\Player\Player.cpp">
       <Filter>소스 파일\Entity\Object\Player</Filter>
+    </ClCompile>
+    <ClCompile Include="_Script\Entity\Object\StateManager.cpp">
+      <Filter>소스 파일\Entity\Object</Filter>
+    </ClCompile>
+    <ClCompile Include="_Script\Entity\Object\Player\State\PlayerIdle.cpp">
+      <Filter>소스 파일\Entity\Object\Player\State</Filter>
+    </ClCompile>
+    <ClCompile Include="_Script\Entity\Object\Player\State\PlayerWalk.cpp">
+      <Filter>소스 파일\Entity\Object\Player\State</Filter>
+    </ClCompile>
+    <ClCompile Include="_Script\Entity\ColliderManager.cpp">
+      <Filter>소스 파일\Entity</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -103,6 +121,18 @@
     </ClInclude>
     <ClInclude Include="_Script\Entity\Object\Player\Player.h">
       <Filter>소스 파일\Entity\Object\Player</Filter>
+    </ClInclude>
+    <ClInclude Include="_Script\Entity\Object\StateManager.h">
+      <Filter>소스 파일\Entity\Object</Filter>
+    </ClInclude>
+    <ClInclude Include="_Script\Entity\Object\Player\State\PlayerIdle.h">
+      <Filter>소스 파일\Entity\Object\Player\State</Filter>
+    </ClInclude>
+    <ClInclude Include="_Script\Entity\Object\Player\State\PlayerWalk.h">
+      <Filter>소스 파일\Entity\Object\Player\State</Filter>
+    </ClInclude>
+    <ClInclude Include="_Script\Entity\ColliderManager.h">
+      <Filter>소스 파일\Entity</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

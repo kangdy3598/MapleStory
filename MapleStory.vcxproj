@@ -23,9 +23,13 @@
     <ClCompile Include="_Script\Engine\Input.cpp" />
     <ClCompile Include="_Script\Engine\Render.cpp" />
     <ClCompile Include="_Script\Engine\System.cpp" />
+    <ClCompile Include="_Script\Entity\ColliderManager.cpp" />
     <ClCompile Include="_Script\Entity\Entity.cpp" />
     <ClCompile Include="_Script\Entity\Object\ObjectManager.cpp" />
     <ClCompile Include="_Script\Entity\Object\Player\Player.cpp" />
+    <ClCompile Include="_Script\Entity\Object\Player\State\PlayerIdle.cpp" />
+    <ClCompile Include="_Script\Entity\Object\Player\State\PlayerWalk.cpp" />
+    <ClCompile Include="_Script\Entity\Object\StateManager.cpp" />
     <ClCompile Include="_Script\Entity\UI\Keyconfig.cpp" />
     <ClCompile Include="_Script\Entity\UI\UIManager.cpp" />
     <ClCompile Include="_Script\Entity\UI\SkillWindow.cpp" />
@@ -36,9 +40,13 @@
     <ClInclude Include="_Script\Engine\Input.h" />
     <ClInclude Include="_Script\Engine\Render.h" />
     <ClInclude Include="_Script\Engine\System.h" />
+    <ClInclude Include="_Script\Entity\ColliderManager.h" />
     <ClInclude Include="_Script\Entity\Entity.h" />
     <ClInclude Include="_Script\Entity\Object\ObjectManager.h" />
     <ClInclude Include="_Script\Entity\Object\Player\Player.h" />
+    <ClInclude Include="_Script\Entity\Object\Player\State\PlayerIdle.h" />
+    <ClInclude Include="_Script\Entity\Object\Player\State\PlayerWalk.h" />
+    <ClInclude Include="_Script\Entity\Object\StateManager.h" />
     <ClInclude Include="_Script\Entity\UI\InputKeyDefine.h" />
     <ClInclude Include="_Script\Entity\UI\Keyconfig.h" />
     <ClInclude Include="_Script\Entity\UI\SkillWindow.h" />

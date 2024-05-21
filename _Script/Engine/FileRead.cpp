@@ -88,7 +88,10 @@ INT CFileRead::SetValue()
 
 		str += chBuffer;
 	}
+	if (str.size() > 0)
+		return std::stoi(str);
 
-	return std::stoi(str);
+	else
+		return -1;
 }
 
