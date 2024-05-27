@@ -15,6 +15,7 @@ public:
 	void Release();
 
 	void SetSpriteInfo(SpriteInfo* sprInfo, std::string fileName);
+	POINT SetKeySlotPosition(std::string fileName);
 
 private:
 	void SetCursorByName(std::string findName);
@@ -29,11 +30,13 @@ private:
 	BOOL bResult = 0;
 	std::string str = "";
 
-	std::string spriteInfoNameTag[6] = { "\"x\": " ,
+	std::string spriteInfoNameTag[8] = { "\"x\": " ,
 										 "\"y\": " ,
 										 "\"w\": " ,
 										 "\"h\": " ,
 									  	 "\"a\": " ,
-										 "\"b\": " , };
+										 "\"b\": " ,
+										 "\"m\": " , 
+									     "\"n\": " , };
 };
 

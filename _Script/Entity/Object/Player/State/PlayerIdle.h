@@ -12,6 +12,8 @@ public:
         return instance;
     }
     virtual void Enter();
-    virtual void Update();
+    virtual void Update(float _fTickTime);
     virtual void Exit();
+
+    void PlayAction(int _key) override;
 };

@@ -18,7 +18,7 @@ CUIManager::~CUIManager()
 {
 }
 
-void CUIManager::Initialize(int _screenWidth, int _screenHeight, CFileRead* m_CFileRead, CKeyconfig*& _CKeyconfig)
+void CUIManager::Initialize(HDC _hdc, int _screenWidth, int _screenHeight, CFileRead* m_CFileRead, CKeyconfig*& _CKeyconfig)
 {
 	spriteAtlas = (HBITMAP)LoadImageA(nullptr, m_FilePath, IMAGE_BITMAP, 0, 0, LR_LOADFROMFILE);
 	if (!spriteAtlas)
@@ -32,7 +32,7 @@ void CUIManager::Initialize(int _screenWidth, int _screenHeight, CFileRead* m_CF
 	{
 		return;
 	}
-	m_CKeyconfig->Initialize(_screenWidth, _screenHeight, spriteAtlas, m_CFileRead);
+	m_CKeyconfig->Initialize(_hdc, _screenWidth, _screenHeight, spriteAtlas, m_CFileRead);
 	_CKeyconfig = m_CKeyconfig;
 
 	m_CSkillWindow = new CSkillWindow;
@@ -50,7 +50,7 @@ void CUIManager::Release()
 	SAFE_DELETE(m_CKeyconfig);
 }
 
-void CUIManager::Update(bool _keyboardState[256])
+void CUIManager::Update(bool _keyboardState[256], float _fTickTime)
 {
 	m_CKeyconfig->Update(_keyboardState);
 }
@@ -64,7 +64,7 @@ void CUIManager::Render(HDC mem1dc, HDC mem2dc)
 
 int CUIManager::GetSlotKeyValue(int _key)
 {
-	return m_CKeyconfig->GetSlotKeyValue(_key);
+	return m_CKeyconfig->GetSlotNum(_key);
 }
 
 void CUIManager::EnableUI(int _keyValue)
@@ -87,7 +87,7 @@ void CUIManager::CheckMouseOver(WORD mouseX, WORD mouseY)
 	m_CKeyconfig->CheckMouseOver(mouseX, mouseY);
 }
 
-void CUIManager::CheckMouseClicked()
+void CUIManager::CheckMouseClicked(WORD mouseX, WORD mouseY)
 {
-	m_CKeyconfig->CheckMouseClicked();
+	m_CKeyconfig->CheckMouseClicked(mouseX, mouseY);
 }

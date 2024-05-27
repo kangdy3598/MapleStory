@@ -2,14 +2,16 @@
 
 CSystem::CSystem()
 {
-	m_CInput = nullptr;
+	//m_CInput = nullptr;
 	m_CEntity = nullptr;
+	m_CTime = nullptr;
 }
 
 CSystem::CSystem(const CSystem&)
 {
-	m_CInput = nullptr;
+	//m_CInput = nullptr;
 	m_CEntity = nullptr;
+	m_CTime = nullptr;
 }
 
 CSystem::~CSystem()
@@ -18,19 +20,26 @@ CSystem::~CSystem()
 
 bool CSystem::Initialize()
 {
-	m_CInput = new CInput;
-	if (!m_CInput) return false;
+	/*m_CInput = new CInput;
+	if (!m_CInput) return false;*/
 	
 	m_CEntity = new CEntity;
 	if (!m_CEntity) return false;
 	
+	m_CTime = new CTime;
+	if (!m_CTime) return false;
+
 	int screenWidth = 0;
 	int screenHeight = 0;
 
 	InitializeWindows(screenWidth, screenHeight);
 	
-	m_CInput->Initialize();
-	m_CEntity->Initialize(screenWidth, screenHeight);
+	RECT rect;
+	GetClientRect(m_hwnd, &rect);
+
+	/*m_CInput->Initialize();*/
+	m_CEntity->Initialize(m_hwnd, rect, screenWidth, screenHeight);
+	m_CTime->Initialize();
 
 	ShowWindows();
 
@@ -39,8 +48,9 @@ bool CSystem::Initialize()
 
 void CSystem::Release()
 {
-	SAFE_DELETE(m_CInput);
+	//SAFE_DELETE(m_CInput);
 	SAFE_DELETE(m_CEntity);
+	//SAFE_DELETE(m_CTime);
 
 	ShutdownWindows();
 }
@@ -73,26 +83,31 @@ void CSystem::Run()
 
 bool CSystem::Update()
 {
-	m_CEntity->Update(m_CInput->GetKeyState());
+	RECT rect;
+	GetClientRect(m_hwnd, &rect);
+
+	m_CTime->Update();
+	float tickTime = m_CTime->GetTime();
+	
+	m_CEntity->Update(CInput::GetInstance()->GetKeyState(), tickTime);
+	m_CEntity->Render(m_hwnd, rect);
+
 	return true;
 }
 
 LRESULT CALLBACK CSystem::MessageHandler(HWND hwnd, UINT umsg, WPARAM wparam, LPARAM lparam)
 {
-	RECT rect;
-	GetClientRect(m_hwnd, &rect);
-
 	switch (umsg)
 	{
 	case WM_KEYDOWN:
 		//m_CInput->SetKey((unsigned int)wparam);
-		m_CEntity->ProcessKeyInput((unsigned int)wparam);
-		InvalidateRect(hwnd, NULL, FALSE);
+		//m_CEntity->ProcessKeyInput((unsigned int)wparam);
+		//InvalidateRect(hwnd, NULL, FALSE);
 		break;
 
 	case WM_KEYUP:
 		//m_CInput->KeyUp((unsigned int)wparam);
-		InvalidateRect(hwnd, NULL, FALSE);
+		//InvalidateRect(hwnd, NULL, FALSE);
 		break;
 
 	case WM_MOUSEMOVE:
@@ -101,15 +116,12 @@ LRESULT CALLBACK CSystem::MessageHandler(HWND hwnd, UINT umsg, WPARAM wparam, LP
 		break;
 
 	case WM_LBUTTONDOWN:
-		m_CEntity->ProcessMouseDown();
+		m_CEntity->ProcessMouseDown(LOWORD(lparam), HIWORD(lparam));
 		InvalidateRect(hwnd, NULL, FALSE);
 		break;
 
 	case WM_DESTROY:
 		PostQuitMessage(0);
-		break;
-	case WM_PAINT:
-		m_CEntity->Render(hwnd, rect);
 		break;
 	}
 	return DefWindowProc(hwnd, umsg, wparam, lparam);

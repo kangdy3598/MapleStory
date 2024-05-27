@@ -15,12 +15,15 @@ public:
 	CInput(const CInput&);
 	~CInput();
 
+	SINGLETON(CInput);
+
 	bool Initialize();
 	void Release();
 	void Update(); //
 
-	void KeyDown(unsigned int _key);
-	void KeyUp(unsigned int _key);
+	bool GetKeyDown(unsigned int _key);
+	bool GetKeyUp(unsigned int _key);
+	bool GetKey(unsigned int _key);
 	//void KeyDownNextFrame();
 	
 	bool* GetKeyState();
@@ -31,4 +34,5 @@ private:
 	int m_screenHeight = 0;
 
 	bool m_keyboardState[256] = { 0, };
+	bool m_bIsDown;
 };

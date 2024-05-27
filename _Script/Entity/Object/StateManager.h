@@ -1,5 +1,6 @@
 #pragma once
 #include "../../stdafx.h"
+#include "../../Engine/Input.h"
 //#include "../Object/ObjectManager.h"
 
 class CObjectManager;
@@ -13,8 +14,10 @@ public:
 
 	virtual void Enter() = 0;
 
-	virtual void Update() = 0;
+	virtual void Update(float _fTickTime) = 0;
 
 	virtual void Exit() = 0;
+
+	virtual void PlayAction(int _key) {}
 
 };

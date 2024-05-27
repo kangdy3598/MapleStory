@@ -2,6 +2,14 @@
 #include "../../stdafx.h"
 #include "StateManager.h"
 
+enum eStateList
+{
+	IDLE,
+	WALK,
+	JUMP,
+	END
+};
+
 class CObjectManager
 {
 public:
@@ -12,11 +20,12 @@ public:
 	virtual void Initialize() = 0;
 	void Release();
 
-	virtual void Update() = 0;
+	virtual void Update(float _fTickTime) = 0;
 	virtual void Render(HDC mem1dc, HDC mem2dc) = 0;
-	void PlayAction(int _keyValue);
+	//virtual void Render2(HWND _hwnd, RECT _rect) = 0;
+	virtual void PlayAction(int _keyValue);
 	void ChangeState(CStateManager* _stateManager, CObjectManager* _obj);
-
+	void ChangeState(eStateList _state);
 private:
 
 public:
@@ -25,6 +34,6 @@ public:
 
 protected:
 	CStateManager* m_nowState = nullptr;
-
+	eStateList m_eState;
 private:
 };

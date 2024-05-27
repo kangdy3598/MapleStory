@@ -2,10 +2,12 @@
 
 CInput::CInput()
 {
+	m_bIsDown = false;
 }
 
 CInput::CInput(const CInput&)
 {
+	m_bIsDown = false;
 }
 
 CInput::~CInput()
@@ -25,15 +27,40 @@ void CInput::Update()
 {
 }
 
-void CInput::KeyDown(unsigned int _key)
+bool CInput::GetKeyDown(unsigned int _key)
 {
-	//m_keyboardState[key] = KEYBOARD_DOWN;
-	m_keyboardState[_key] = true;
+	if (GetAsyncKeyState(_key) & 0x0001)
+		return true;
+
+	else
+		return false;
 }
 
-void CInput::KeyUp(unsigned int _key)
+bool CInput::GetKeyUp(unsigned int _key)
 {
-	m_keyboardState[_key] = false;
+	if ((GetAsyncKeyState(_key) & 0x8000) == 0x8000 && !m_bIsDown)
+	{
+		m_bIsDown = true;
+	}
+		
+	
+	if ((GetAsyncKeyState(_key) & 0x8001) == 0x0000 && m_bIsDown)
+	{
+		m_bIsDown = false;
+		return true;
+	}
+
+	else
+		return false;
+}
+
+bool CInput::GetKey(unsigned int _key)
+{
+	if ((GetAsyncKeyState(_key) & 0x8000))
+		return true;
+	
+	else
+		return false;
 }
 
 bool* CInput::GetKeyState()

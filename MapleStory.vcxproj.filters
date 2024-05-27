@@ -34,6 +34,9 @@
     <Filter Include="소스 파일\Entity\Object\Enemy">
       <UniqueIdentifier>{44b7de91-2ff8-47b5-907a-8e8d7b35f234}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Entity\Object\Map">
+      <UniqueIdentifier>{450e6158-947d-4b41-b690-e9f39dfc9cd7}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="_Script\main.cpp">
@@ -80,6 +83,15 @@
     </ClCompile>
     <ClCompile Include="_Script\Entity\ColliderManager.cpp">
       <Filter>소스 파일\Entity</Filter>
+    </ClCompile>
+    <ClCompile Include="_Script\Entity\Object\Map\Map.cpp">
+      <Filter>소스 파일\Entity\Object\Map</Filter>
+    </ClCompile>
+    <ClCompile Include="_Script\Entity\Object\Player\State\PlayerJump.cpp">
+      <Filter>소스 파일\Entity\Object\Player\State</Filter>
+    </ClCompile>
+    <ClCompile Include="_Script\Engine\Time.cpp">
+      <Filter>소스 파일\Engine</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -133,6 +145,15 @@
     </ClInclude>
     <ClInclude Include="_Script\Entity\ColliderManager.h">
       <Filter>소스 파일\Entity</Filter>
+    </ClInclude>
+    <ClInclude Include="_Script\Entity\Object\Map\Map.h">
+      <Filter>소스 파일\Entity\Object\Map</Filter>
+    </ClInclude>
+    <ClInclude Include="_Script\Entity\Object\Player\State\PlayerJump.h">
+      <Filter>소스 파일\Entity\Object\Player\State</Filter>
+    </ClInclude>
+    <ClInclude Include="_Script\Engine\Time.h">
+      <Filter>소스 파일\Engine</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

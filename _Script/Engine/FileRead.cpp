@@ -47,6 +47,17 @@ void CFileRead::SetSpriteInfo(SpriteInfo* sprInfo, std::string fileName)
 	sprInfo->intervalMainPos.y = SetValue();
 }
 
+POINT CFileRead::SetKeySlotPosition(std::string fileName)
+{
+	POINT returnPosition = POINT();
+
+	SetCursorByName(spriteInfoNameTag[6]);
+	returnPosition.x = SetValue();
+	SetCursorByName(spriteInfoNameTag[7]);
+	returnPosition.y = SetValue();
+	return returnPosition;
+}
+
 void CFileRead::SetCursorByName(std::string findName)
 {
 	// findName 마지막 문자 다음에 커서가 간다.

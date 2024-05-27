@@ -22,6 +22,7 @@ void CRender::Release()
 
 void CRender::StartRender(HWND _hwnd, RECT _rect)
 {
+
 	m_hdc = BeginPaint(_hwnd, &m_ps);
 	mem1dc = CreateCompatibleDC(m_hdc);
 	mem2dc = CreateCompatibleDC(mem1dc);
@@ -32,7 +33,6 @@ void CRender::StartRender(HWND _hwnd, RECT _rect)
 	oldBit1 = (HBITMAP)SelectObject(mem1dc, hBit1);
 	FillRect(mem1dc, &_rect, (HBRUSH)GetStockObject(WHITE_BRUSH));
 }
-
 void CRender::EndRender(HWND _hwnd)
 {
 	SelectObject(mem1dc, oldBit1);
