@@ -21,10 +21,10 @@ void CObjectManager::Release()
 	//SAFE_DELETE(m_CPlayer);
 }
 
-void CObjectManager::PlayAction(int _keyValue)
-{
-	//m_CPlayer->PlayAction(_keyValue);
-}
+//void CObjectManager::PlayAction(int _keyValue)
+//{
+//	//m_CPlayer->PlayAction(_keyValue);
+//}
 
 void CObjectManager::ChangeState(CStateManager* _stateManager, CObjectManager* _obj)
 {

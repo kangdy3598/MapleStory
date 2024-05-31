@@ -4,9 +4,10 @@
 class PlayerWalk : public CStateManager
 {
 private:
-    POINT m_PlayerMoveSpeed = POINT{ 5,1 };
+    float m_minMoveSpeed = 1.75f;
+    float m_maxMoveSpeed = 2.25f;
     POINT m_PlayerPosition = POINT();
-    bool m_down = false;
+
 private:
     void MoveVertical(int _dir);
 public:

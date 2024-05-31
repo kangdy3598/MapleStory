@@ -7,7 +7,6 @@ enum eStateList
 	IDLE,
 	WALK,
 	JUMP,
-	END
 };
 
 class CObjectManager
@@ -20,10 +19,10 @@ public:
 	virtual void Initialize() = 0;
 	void Release();
 
-	virtual void Update(float _fTickTime) = 0;
+	virtual void Update(bool _keyboardState[256], float _fTickTime) = 0;
 	virtual void Render(HDC mem1dc, HDC mem2dc) = 0;
 	//virtual void Render2(HWND _hwnd, RECT _rect) = 0;
-	virtual void PlayAction(int _keyValue);
+	virtual void PlayAction(int _keyValue) = 0;
 	void ChangeState(CStateManager* _stateManager, CObjectManager* _obj);
 	void ChangeState(eStateList _state);
 private:

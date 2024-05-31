@@ -20,8 +20,8 @@ CSystem::~CSystem()
 
 bool CSystem::Initialize()
 {
-	/*m_CInput = new CInput;
-	if (!m_CInput) return false;*/
+	m_CInput = new CInput;
+	if (!m_CInput) return false;
 	
 	m_CEntity = new CEntity;
 	if (!m_CEntity) return false;
@@ -37,7 +37,7 @@ bool CSystem::Initialize()
 	RECT rect;
 	GetClientRect(m_hwnd, &rect);
 
-	/*m_CInput->Initialize();*/
+	CInput::GetInstance()->Initialize();
 	m_CEntity->Initialize(m_hwnd, rect, screenWidth, screenHeight);
 	m_CTime->Initialize();
 
@@ -87,9 +87,9 @@ bool CSystem::Update()
 	GetClientRect(m_hwnd, &rect);
 
 	m_CTime->Update();
-	float tickTime = m_CTime->GetTime();
 	
-	m_CEntity->Update(CInput::GetInstance()->GetKeyState(), tickTime);
+	CInput::GetInstance()->Update();
+	m_CEntity->Update(nullptr, m_CTime->GetTime());
 	m_CEntity->Render(m_hwnd, rect);
 
 	return true;
@@ -101,7 +101,7 @@ LRESULT CALLBACK CSystem::MessageHandler(HWND hwnd, UINT umsg, WPARAM wparam, LP
 	{
 	case WM_KEYDOWN:
 		//m_CInput->SetKey((unsigned int)wparam);
-		//m_CEntity->ProcessKeyInput((unsigned int)wparam);
+		m_CEntity->ProcessKeyInput((unsigned int)wparam);
 		//InvalidateRect(hwnd, NULL, FALSE);
 		break;
 

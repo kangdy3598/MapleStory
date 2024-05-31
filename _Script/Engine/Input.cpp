@@ -2,21 +2,22 @@
 
 CInput::CInput()
 {
-	m_bIsDown = false;
 }
 
 CInput::CInput(const CInput&)
 {
-	m_bIsDown = false;
 }
 
 CInput::~CInput()
 {
 }
 
-bool CInput::Initialize()
+void CInput::Initialize()
 {
-	return true;
+	for (int i = 0; i < COUNT; i++)
+	{
+		vecKey.push_back(tagKeyState());
+	}
 }
 
 void CInput::Release()
@@ -25,46 +26,95 @@ void CInput::Release()
 
 void CInput::Update()
 {
+	for (int i = 0; i < COUNT; i++)
+	{
+		if(GetAsyncKeyState(m_arrKey[i]) & 0x8000)
+		{
+			if (vecKey[i].bIsPressed)
+				vecKey[i].eKeyState = KEY_PRESSED;
+			else
+			{
+				vecKey[i].eKeyState = KEY_DOWN;
+				vecKey[i].bIsPressed = true;
+			}	
+		}
+		else
+		{
+			if (vecKey[i].bIsPressed)
+			{
+				vecKey[i].eKeyState = KEY_UP;
+				vecKey[i].bIsPressed = false;
+			}
+				
+			else
+			{
+				vecKey[i].eKeyState = KEY_NONE;
+			}
+		}
+	}
 }
 
 bool CInput::GetKeyDown(unsigned int _key)
 {
-	if (GetAsyncKeyState(_key) & 0x0001)
-		return true;
+	for (int i = 0; i < COUNT; i++)
+	{
+		if (m_arrKey[i] == _key)
+		{
+			if (vecKey[i].eKeyState == KEY_DOWN)
+				return true;
+		}
+	}
 
+	return false;
+}
+
+bool CInput::GetKeyDown(KeyValue _key)
+{
+	if (vecKey[_key].eKeyState == KEY_DOWN)
+		return true;
 	else
 		return false;
 }
 
 bool CInput::GetKeyUp(unsigned int _key)
 {
-	if ((GetAsyncKeyState(_key) & 0x8000) == 0x8000 && !m_bIsDown)
+	for (int i = 0; i < COUNT; i++)
 	{
-		m_bIsDown = true;
-	}
-		
-	
-	if ((GetAsyncKeyState(_key) & 0x8001) == 0x0000 && m_bIsDown)
-	{
-		m_bIsDown = false;
-		return true;
+		if (m_arrKey[i] == _key)
+		{
+			if (vecKey[i].eKeyState == KEY_UP)
+				return true;
+			else
+				return false;
+		}
 	}
 
-	else
-		return false;
+	return false;
+
 }
 
 bool CInput::GetKey(unsigned int _key)
 {
-	if ((GetAsyncKeyState(_key) & 0x8000))
-		return true;
-	
-	else
-		return false;
+	for (int i = 0; i < COUNT; i++)
+	{
+		if (m_arrKey[i] == _key)
+		{
+			if (vecKey[i].eKeyState == KEY_PRESSED)
+				return true;
+		}
+	}
+
+	return false;
 }
 
-bool* CInput::GetKeyState()
+KeyState CInput::GetKeyState(unsigned int _key)
 {
-	return m_keyboardState;
+	for (int i = 0; i < COUNT; i++)
+	{
+		if (m_arrKey[i] == _key)
+		{
+			return vecKey[i].eKeyState;
+		}
+	}
 }
 

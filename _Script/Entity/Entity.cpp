@@ -58,7 +58,7 @@ void CEntity::Release()
 void CEntity::Update(bool _keyboardState[256], float _fTickTime)
 {
 	m_CUIManager->Update(_keyboardState, _fTickTime);
-	m_CObjectManager->Update(_fTickTime);
+	m_CObjectManager->Update(_keyboardState, _fTickTime);
 }
 
 void CEntity::Render(HWND _hwnd, RECT _rect)

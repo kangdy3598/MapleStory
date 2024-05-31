@@ -16,4 +16,6 @@ public:
     virtual void Exit();
 
     void PlayAction(int _key) override;
+
+    void Deceleration_X();
 };

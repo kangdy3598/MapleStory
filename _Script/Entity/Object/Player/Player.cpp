@@ -2,7 +2,7 @@
 
 CPlayer::CPlayer()
 {
-	m_nowPosition = POINT{ 300, 100 };
+	m_nowPosition = POSITION( 1000, 100);
 	m_accelY = 3.0f;
 	ChangeState(PlayerJump::Instance(), this);
 }
@@ -32,9 +32,11 @@ void CPlayer::Release()
 {
 }
 
-void CPlayer::Update(float _fTime)
-{
+void CPlayer::Update(bool _keyboardState[256], float _fTime)
+{ 
+	m_nowPosition.x += m_accelX * m_moveDir * _fTime / 10;
 	m_nowState->Update(_fTime);
+	
 }
 
 void CPlayer::Render(HDC _mem1dc, HDC _mem2dc)
@@ -61,14 +63,28 @@ void CPlayer::Render(HDC _mem1dc, HDC _mem2dc)
 	default:
 		break;
 	}
-	
-	TCHAR str[128];
-	SetTextAlign(_mem1dc, TA_LEFT);
-	wsprintf(str, TEXT("accel : %f"), m_accelY);
-	TextOut(_mem1dc, 10, 30, str, lstrlen(str));
 
-	wsprintf(str, TEXT("pos : %d"), m_nowPosition.y);
-	TextOut(_mem1dc, 10, 50, str, lstrlen(str));
+	std::wstring posx = std::to_wstring(m_nowPosition.x);
+	std::wstring posy = std::to_wstring(m_nowPosition.y);
+	std::wstring xyPosText = L"좌표 : " + posx + L", " + posy;   // x, y
+
+	TextOut(_mem1dc, 10, 30, xyPosText.c_str(), xyPosText.size());
+	//=============================================================
+
+	std::wstring accelx = std::to_wstring(m_accelX);
+	std::wstring accely = std::to_wstring(m_accelY);
+	std::wstring accelText = L"가속 : " + accelx + L", " + accely;   // x, y
+
+	TextOut(_mem1dc, 10, 50, accelText.c_str(), accelText.size());
+	//=============================================================
+	std::wstring frame = std::to_wstring(m_fTime);
+	std::wstring frameText = L"프레임 :  " + frame;
+
+	TextOut(_mem1dc, 10, 70, frameText.c_str(), frameText.size());
+
+	/*WCHAR str[100];
+	wsprintf(str, TEXT("프레임 : %d"), m_fTime);
+	TextOut(_mem1dc, 10, 50, str, lstrlen(str));*/
 }
 
 int CPlayer::GetSlotKeyValue(int _key)

@@ -1,5 +1,5 @@
 // SLOT
-#define SLOTSIZE 4
+#define SLOTSIZE 5
 #define SLOT_WINDOW_ITEM         0
 #define SLOT_WINDOW_SKILL		 1
 #define SLOT_WINDOW_KEYCONFIG    2

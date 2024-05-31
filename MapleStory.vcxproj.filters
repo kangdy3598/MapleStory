@@ -93,6 +93,9 @@
     <ClCompile Include="_Script\Engine\Time.cpp">
       <Filter>소스 파일\Engine</Filter>
     </ClCompile>
+    <ClCompile Include="_Script\Entity\Object\Player\State\PlayerDJump.cpp">
+      <Filter>소스 파일\Entity\Object\Player\State</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="_Script\pch.h">
@@ -154,6 +157,9 @@
     </ClInclude>
     <ClInclude Include="_Script\Engine\Time.h">
       <Filter>소스 파일\Engine</Filter>
+    </ClInclude>
+    <ClInclude Include="_Script\Entity\Object\Player\State\PlayerDJump.h">
+      <Filter>소스 파일\Entity\Object\Player\State</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

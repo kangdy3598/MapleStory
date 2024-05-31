@@ -4,7 +4,7 @@
 class PlayerJump : public CStateManager
 {
 private:
-    POINT m_PlayerPosition = POINT();
+    POSITION m_PlayerPosition;
 
 private:
     void MoveHorizon(int _dir);

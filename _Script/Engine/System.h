@@ -36,7 +36,7 @@ private:
 	LPCWSTR m_applicationName = L"";
 	BOOL FULL_SCREEN = FALSE;
 
-	/*CInput* m_CInput;*/
+	CInput* m_CInput;
 	CEntity* m_CEntity;
 	CTime* m_CTime;
 
