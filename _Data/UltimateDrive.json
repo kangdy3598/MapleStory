@@ -1,0 +1,755 @@
+{
+	"textures": [
+		{
+			"image": "UltimateDrive.png",
+			"format": "RGBA8888",
+			"size": {
+				"w": 1015,
+				"h": 677
+			},
+			"scale": 1,
+			"frames": [
+				{
+					"filename": "UltimateDrive_Hit2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 212,
+						"h": 229
+					},
+					"spriteSourceSize": {
+						"x": 26,
+						"y": 0,
+						"w": 183,
+						"h": 229
+					},
+					"frame": {
+						"x": 0,
+						"y": 0,
+						"w": 183,
+						"h": 229
+					}
+				},
+				{
+					"filename": "UltimateDrive_Hit1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 212,
+						"h": 229
+					},
+					"spriteSourceSize": {
+						"x": 51,
+						"y": 18,
+						"w": 153,
+						"h": 211
+					},
+					"frame": {
+						"x": 0,
+						"y": 229,
+						"w": 153,
+						"h": 211
+					}
+				},
+				{
+					"filename": "UltimateDrive_Hit3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 212,
+						"h": 229
+					},
+					"spriteSourceSize": {
+						"x": 10,
+						"y": 0,
+						"w": 202,
+						"h": 197
+					},
+					"frame": {
+						"x": 0,
+						"y": 440,
+						"w": 202,
+						"h": 197
+					}
+				},
+				{
+					"filename": "UltimateDriveB_pre1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 305,
+						"h": 123
+					},
+					"spriteSourceSize": {
+						"x": 175,
+						"y": 67,
+						"w": 96,
+						"h": 36
+					},
+					"frame": {
+						"x": 0,
+						"y": 637,
+						"w": 96,
+						"h": 36
+					}
+				},
+				{
+					"filename": "UltimateDriveB_pre0.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 305,
+						"h": 123
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 2,
+						"h": 2
+					},
+					"frame": {
+						"x": 0,
+						"y": 673,
+						"w": 2,
+						"h": 2
+					}
+				},
+				{
+					"filename": "UltimateDrive_Icon.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 32
+					},
+					"frame": {
+						"x": 96,
+						"y": 637,
+						"w": 32,
+						"h": 32
+					}
+				},
+				{
+					"filename": "UltimateDrive_IconMouseOver.png",
+					"rotated": false,
+					"trimmed": false,
+					"sourceSize": {
+						"w": 32,
+						"h": 32
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 32,
+						"h": 32
+					},
+					"frame": {
+						"x": 128,
+						"y": 637,
+						"w": 32,
+						"h": 32
+					}
+				},
+				{
+					"filename": "UltimateDrive_Hit4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 212,
+						"h": 229
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 34,
+						"w": 193,
+						"h": 166
+					},
+					"frame": {
+						"x": 153,
+						"y": 229,
+						"w": 193,
+						"h": 166
+					}
+				},
+				{
+					"filename": "UltimateDrive_pre4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 138,
+						"h": 151
+					},
+					"spriteSourceSize": {
+						"x": 13,
+						"y": 0,
+						"w": 124,
+						"h": 151
+					},
+					"frame": {
+						"x": 183,
+						"y": 0,
+						"w": 124,
+						"h": 151
+					}
+				},
+				{
+					"filename": "UltimateDriveB_Keyend1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 175,
+						"h": 120
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 31,
+						"w": 173,
+						"h": 70
+					},
+					"frame": {
+						"x": 183,
+						"y": 151,
+						"w": 173,
+						"h": 70
+					}
+				},
+				{
+					"filename": "UltimateDrive_Keydown2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 376,
+						"h": 131
+					},
+					"spriteSourceSize": {
+						"x": 41,
+						"y": 0,
+						"w": 335,
+						"h": 131
+					},
+					"frame": {
+						"x": 307,
+						"y": 0,
+						"w": 335,
+						"h": 131
+					}
+				},
+				{
+					"filename": "UltimateDrive_Keydown3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 376,
+						"h": 131
+					},
+					"spriteSourceSize": {
+						"x": 3,
+						"y": 0,
+						"w": 371,
+						"h": 117
+					},
+					"frame": {
+						"x": 642,
+						"y": 0,
+						"w": 371,
+						"h": 117
+					}
+				},
+				{
+					"filename": "UltimateDrive_Keydown1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 376,
+						"h": 131
+					},
+					"spriteSourceSize": {
+						"x": 44,
+						"y": 1,
+						"w": 332,
+						"h": 130
+					},
+					"frame": {
+						"x": 642,
+						"y": 117,
+						"w": 332,
+						"h": 130
+					}
+				},
+				{
+					"filename": "UltimateDrive_Keydown0.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 376,
+						"h": 131
+					},
+					"spriteSourceSize": {
+						"x": 74,
+						"y": 0,
+						"w": 280,
+						"h": 130
+					},
+					"frame": {
+						"x": 356,
+						"y": 131,
+						"w": 280,
+						"h": 130
+					}
+				},
+				{
+					"filename": "UltimateDrive_Keydown4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 376,
+						"h": 131
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 52,
+						"w": 375,
+						"h": 64
+					},
+					"frame": {
+						"x": 636,
+						"y": 247,
+						"w": 375,
+						"h": 64
+					}
+				},
+				{
+					"filename": "UltimateDriveB_Keyend0.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 175,
+						"h": 120
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 0,
+						"w": 172,
+						"h": 101
+					},
+					"frame": {
+						"x": 346,
+						"y": 261,
+						"w": 172,
+						"h": 101
+					}
+				},
+				{
+					"filename": "UltimateDrive_Hit5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 212,
+						"h": 229
+					},
+					"spriteSourceSize": {
+						"x": 34,
+						"y": 71,
+						"w": 116,
+						"h": 106
+					},
+					"frame": {
+						"x": 518,
+						"y": 261,
+						"w": 116,
+						"h": 106
+					}
+				},
+				{
+					"filename": "UltimateDrive_Keydown5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 376,
+						"h": 131
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 60,
+						"w": 375,
+						"h": 52
+					},
+					"frame": {
+						"x": 634,
+						"y": 311,
+						"w": 375,
+						"h": 52
+					}
+				},
+				{
+					"filename": "UltimateDriveB_Keydown1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 164,
+						"h": 116
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 19,
+						"w": 164,
+						"h": 89
+					},
+					"frame": {
+						"x": 346,
+						"y": 362,
+						"w": 164,
+						"h": 89
+					}
+				},
+				{
+					"filename": "UltimateDriveB_pre3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 305,
+						"h": 123
+					},
+					"spriteSourceSize": {
+						"x": 166,
+						"y": 34,
+						"w": 139,
+						"h": 65
+					},
+					"frame": {
+						"x": 202,
+						"y": 395,
+						"w": 139,
+						"h": 65
+					}
+				},
+				{
+					"filename": "UltimateDrive_Hit0.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 212,
+						"h": 229
+					},
+					"spriteSourceSize": {
+						"x": 64,
+						"y": 81,
+						"w": 130,
+						"h": 130
+					},
+					"frame": {
+						"x": 202,
+						"y": 460,
+						"w": 130,
+						"h": 130
+					}
+				},
+				{
+					"filename": "UltimateDriveB_Keyend2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 175,
+						"h": 120
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 33,
+						"w": 160,
+						"h": 87
+					},
+					"frame": {
+						"x": 202,
+						"y": 590,
+						"w": 160,
+						"h": 87
+					}
+				},
+				{
+					"filename": "UltimateDrive_pre3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 138,
+						"h": 151
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 10,
+						"w": 125,
+						"h": 120
+					},
+					"frame": {
+						"x": 332,
+						"y": 460,
+						"w": 125,
+						"h": 120
+					}
+				},
+				{
+					"filename": "UltimateDriveB_Keydown0.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 164,
+						"h": 116
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 16,
+						"w": 150,
+						"h": 95
+					},
+					"frame": {
+						"x": 362,
+						"y": 580,
+						"w": 150,
+						"h": 95
+					}
+				},
+				{
+					"filename": "UltimateDriveB_Keydown3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 164,
+						"h": 116
+					},
+					"spriteSourceSize": {
+						"x": 1,
+						"y": 0,
+						"w": 130,
+						"h": 116
+					},
+					"frame": {
+						"x": 457,
+						"y": 451,
+						"w": 130,
+						"h": 116
+					}
+				},
+				{
+					"filename": "UltimateDriveB_pre4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 305,
+						"h": 123
+					},
+					"spriteSourceSize": {
+						"x": 151,
+						"y": 2,
+						"w": 151,
+						"h": 82
+					},
+					"frame": {
+						"x": 510,
+						"y": 367,
+						"w": 151,
+						"h": 82
+					}
+				},
+				{
+					"filename": "UltimateDrive_pre2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 138,
+						"h": 151
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 22,
+						"w": 136,
+						"h": 108
+					},
+					"frame": {
+						"x": 512,
+						"y": 567,
+						"w": 136,
+						"h": 108
+					}
+				},
+				{
+					"filename": "UltimateDriveB_Keydown2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 164,
+						"h": 116
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 14,
+						"w": 153,
+						"h": 99
+					},
+					"frame": {
+						"x": 587,
+						"y": 449,
+						"w": 153,
+						"h": 99
+					}
+				},
+				{
+					"filename": "UltimateDriveB_Keydown5.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 164,
+						"h": 116
+					},
+					"spriteSourceSize": {
+						"x": 4,
+						"y": 25,
+						"w": 160,
+						"h": 85
+					},
+					"frame": {
+						"x": 661,
+						"y": 363,
+						"w": 160,
+						"h": 85
+					}
+				},
+				{
+					"filename": "UltimateDrive_pre1.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 138,
+						"h": 151
+					},
+					"spriteSourceSize": {
+						"x": 2,
+						"y": 35,
+						"w": 136,
+						"h": 95
+					},
+					"frame": {
+						"x": 648,
+						"y": 548,
+						"w": 136,
+						"h": 95
+					}
+				},
+				{
+					"filename": "UltimateDriveB_Keydown4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 164,
+						"h": 116
+					},
+					"spriteSourceSize": {
+						"x": 6,
+						"y": 16,
+						"w": 146,
+						"h": 93
+					},
+					"frame": {
+						"x": 740,
+						"y": 448,
+						"w": 146,
+						"h": 93
+					}
+				},
+				{
+					"filename": "UltimateDriveB_Keyend3.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 175,
+						"h": 120
+					},
+					"spriteSourceSize": {
+						"x": 12,
+						"y": 53,
+						"w": 129,
+						"h": 51
+					},
+					"frame": {
+						"x": 886,
+						"y": 363,
+						"w": 129,
+						"h": 51
+					}
+				},
+				{
+					"filename": "UltimateDriveB_pre2.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 305,
+						"h": 123
+					},
+					"spriteSourceSize": {
+						"x": 164,
+						"y": 36,
+						"w": 128,
+						"h": 87
+					},
+					"frame": {
+						"x": 886,
+						"y": 414,
+						"w": 128,
+						"h": 87
+					}
+				},
+				{
+					"filename": "UltimateDriveB_Keyend4.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 175,
+						"h": 120
+					},
+					"spriteSourceSize": {
+						"x": 13,
+						"y": 57,
+						"w": 124,
+						"h": 55
+					},
+					"frame": {
+						"x": 886,
+						"y": 501,
+						"w": 124,
+						"h": 55
+					}
+				},
+				{
+					"filename": "UltimateDrive_pre0.png",
+					"rotated": false,
+					"trimmed": true,
+					"sourceSize": {
+						"w": 138,
+						"h": 151
+					},
+					"spriteSourceSize": {
+						"x": 0,
+						"y": 46,
+						"w": 138,
+						"h": 89
+					},
+					"frame": {
+						"x": 784,
+						"y": 556,
+						"w": 138,
+						"h": 89
+					}
+				}
+			]
+		}
+	],
+	"meta": {
+		"app": "https://www.codeandweb.com/texturepacker",
+		"version": "3.0",
+		"smartupdate": "$TexturePacker:SmartUpdate:2c7fcefcd9b8b8d98c0c8460a4ccf6b0:bed842a695247de2a492f40271340788:41645d79152bfaed145d2fb05ca58a0e$"
+	}
+}
