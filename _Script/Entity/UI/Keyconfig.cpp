@@ -274,7 +274,7 @@ void CKeyconfig::CheckMouseClicked(WORD mouseX, WORD mouseY)
 	if (m_nowClickedSlot)
 	{
 		KeyInfo* clickKey = FindKeyByMouse(mouseX, mouseY);
-		if (!clickKey)
+		if (!clickKey || !clickKey->keyValue)
 			return;
 
 		if (!BindNewKeyValue(clickKey, m_nowClickedSlot))

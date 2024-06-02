@@ -14,7 +14,6 @@ struct SlotInfo
 struct KeyInfo
 {
 	bool isKeyBinding = false; // 해당 키에 슬롯이 바인딩 되어 있는가 
-	SlotInfo* slotInfo;
 	POINT slotPosition = POINT();
 	int keyValue = -1;			   // 해당 키의 번호
 	SpriteInfo* spriteInfo = nullptr;   // 키 이미지 정보

@@ -18,6 +18,10 @@ CEntity::CEntity(const CEntity&)
 
 CEntity::~CEntity()
 {
+	SAFE_DELETE(m_CFileRead);
+	SAFE_DELETE(m_CObjectManager);
+	SAFE_DELETE(m_CUIManager);
+	SAFE_DELETE(m_CKeyconfig);
 }
 
 void CEntity::Initialize(HWND _hwnd, RECT _rect, int _screenWidth, int _screenHeight)

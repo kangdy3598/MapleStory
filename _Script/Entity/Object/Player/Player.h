@@ -1,5 +1,6 @@
 #pragma once
 #include <string>
+#include "SkillEffect/SkillEffect.h"
 #include "../ObjectManager.h"
 
 
