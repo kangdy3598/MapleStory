@@ -31,12 +31,11 @@ public:
 	float m_accelX = 0.0f;
 	float m_accelY = 0.0f;
 	int m_moveDir = 0;
+
 private:
 	HBITMAP spriteAtlas = NULL;
-
+	CSkillEffect* m_skillEffect = nullptr;
 	
 	float m_fTime = 0.0f;
-
-private:
 };
 

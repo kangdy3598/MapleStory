@@ -48,9 +48,9 @@ bool CSystem::Initialize()
 
 void CSystem::Release()
 {
-	//SAFE_DELETE(m_CInput);
+	SAFE_DELETE(m_CInput);
 	SAFE_DELETE(m_CEntity);
-	//SAFE_DELETE(m_CTime);
+	SAFE_DELETE(m_CTime);
 
 	ShutdownWindows();
 }

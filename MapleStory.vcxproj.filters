@@ -37,6 +37,9 @@
     <Filter Include="소스 파일\Entity\Object\Map">
       <UniqueIdentifier>{450e6158-947d-4b41-b690-e9f39dfc9cd7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="소스 파일\Entity\Object\Player\SkillEffect">
+      <UniqueIdentifier>{d952a34f-bea2-4c57-bddd-443770358c98}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="_Script\main.cpp">
@@ -95,6 +98,9 @@
     </ClCompile>
     <ClCompile Include="_Script\Entity\Object\Player\State\PlayerDJump.cpp">
       <Filter>소스 파일\Entity\Object\Player\State</Filter>
+    </ClCompile>
+    <ClCompile Include="_Script\Entity\Object\Player\SkillEffect\SkillEffect.cpp">
+      <Filter>소스 파일\Entity\Object\Player\SkillEffect</Filter>
     </ClCompile>
   </ItemGroup>
   <ItemGroup>
@@ -160,6 +166,9 @@
     </ClInclude>
     <ClInclude Include="_Script\Entity\Object\Player\State\PlayerDJump.h">
       <Filter>소스 파일\Entity\Object\Player\State</Filter>
+    </ClInclude>
+    <ClInclude Include="_Script\Entity\Object\Player\SkillEffect\SkillEffect.h">
+      <Filter>소스 파일\Entity\Object\Player\SkillEffect</Filter>
     </ClInclude>
   </ItemGroup>
 </Project>

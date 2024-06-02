@@ -29,6 +29,7 @@
     <ClCompile Include="_Script\Entity\Object\Map\Map.cpp" />
     <ClCompile Include="_Script\Entity\Object\ObjectManager.cpp" />
     <ClCompile Include="_Script\Entity\Object\Player\Player.cpp" />
+    <ClCompile Include="_Script\Entity\Object\Player\SkillEffect\SkillEffect.cpp" />
     <ClCompile Include="_Script\Entity\Object\Player\State\PlayerDJump.cpp" />
     <ClCompile Include="_Script\Entity\Object\Player\State\PlayerIdle.cpp" />
     <ClCompile Include="_Script\Entity\Object\Player\State\PlayerJump.cpp" />
@@ -50,6 +51,7 @@
     <ClInclude Include="_Script\Entity\Object\Map\Map.h" />
     <ClInclude Include="_Script\Entity\Object\ObjectManager.h" />
     <ClInclude Include="_Script\Entity\Object\Player\Player.h" />
+    <ClInclude Include="_Script\Entity\Object\Player\SkillEffect\SkillEffect.h" />
     <ClInclude Include="_Script\Entity\Object\Player\State\PlayerDJump.h" />
     <ClInclude Include="_Script\Entity\Object\Player\State\PlayerIdle.h" />
     <ClInclude Include="_Script\Entity\Object\Player\State\PlayerJump.h" />
