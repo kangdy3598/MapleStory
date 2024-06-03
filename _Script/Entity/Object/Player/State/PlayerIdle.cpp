@@ -39,6 +39,11 @@ void PlayerIdle::PlayAction(int _key)
 		((CPlayer*)ob)->m_accelY = -8.5f;
 		ob->ChangeState(PlayerJump::Instance(), ob);
 	}
+
+	if (_key == SLOT_ACTION_PICKUP)
+	{
+		ob->ChangeState(PlayerUltimateDrive::Instance(), ob);
+	}
 	/*if(CInput::GetInstance()->GetKeyDown(VK_LEFT) ||
 	   CInput::GetInstance()->GetKeyDown(VK_RIGHT))
 		ob->ChangeState(PlayerWalk::Instance(), ob);*/

@@ -6,7 +6,6 @@
 //--------------------------------------
 //--------------------------------------
 
-#define KEYDOWN(key) GetAysncKeyState(int) & 0x8000
 #define SINGLETON(type)\
 static type* GetInstance()\
 {\

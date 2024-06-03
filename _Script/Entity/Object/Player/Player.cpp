@@ -25,11 +25,21 @@ void CPlayer::Initialize()
 		return;
 	}
 
-	
+	m_FilePath = "_Data\\UltimateDrive.bmp";
+	HBITMAP skillSprieAtlas = (HBITMAP)LoadImageA(nullptr, m_FilePath, IMAGE_BITMAP, 0, 0, LR_LOADFROMFILE);
+	if (!skillSprieAtlas)
+	{
+		MessageBox(0, L"파일 읽기에 실패 했습니다. : UltimateDrive.bmp", 0, 0);
+		return;
+	}
+
+	m_skillEffect = new CSkillEffect;
+	m_skillEffect->Initialize(m_screenWidth, m_screenHeight, skillSprieAtlas);
 }
 
 void CPlayer::Release()
 {
+	SAFE_DELETE(m_skillEffect);
 }
 
 void CPlayer::Update(bool _keyboardState[256], float _fTime)
@@ -41,6 +51,8 @@ void CPlayer::Update(bool _keyboardState[256], float _fTime)
 
 void CPlayer::Render(HDC _mem1dc, HDC _mem2dc)
 {
+	ShowTextPlayerInfo(_mem1dc);
+	
 	HBITMAP oldBit1 = (HBITMAP)SelectObject(_mem2dc, spriteAtlas);
 	BitBlt(_mem1dc,
 		m_nowPosition.x - 98 / 2,
@@ -49,6 +61,16 @@ void CPlayer::Render(HDC _mem1dc, HDC _mem2dc)
 		_mem2dc, 0, 0,
 		SRCCOPY);
 
+	m_skillEffect->Render(m_nowPosition, _mem1dc, _mem2dc);
+}
+
+int CPlayer::GetSlotKeyValue(int _key)
+{
+	return 0;
+}
+
+void CPlayer::ShowTextPlayerInfo(HDC _mem1dc)
+{
 	switch (m_eState)
 	{
 	case IDLE:
@@ -61,8 +83,10 @@ void CPlayer::Render(HDC _mem1dc, HDC _mem2dc)
 		TextOut(_mem1dc, 10, 10, TEXT("JUMP"), 4);
 		break;
 	default:
+		TextOut(_mem1dc, 10, 10, TEXT("SKILL"), 5);
 		break;
 	}
+	//=============================================================
 
 	std::wstring posx = std::to_wstring(m_nowPosition.x);
 	std::wstring posy = std::to_wstring(m_nowPosition.y);
@@ -85,11 +109,6 @@ void CPlayer::Render(HDC _mem1dc, HDC _mem2dc)
 	/*WCHAR str[100];
 	wsprintf(str, TEXT("프레임 : %d"), m_fTime);
 	TextOut(_mem1dc, 10, 50, str, lstrlen(str));*/
-}
-
-int CPlayer::GetSlotKeyValue(int _key)
-{
-	return 0;
 }
 
 void CPlayer::SetGravity(float _fTickTime)

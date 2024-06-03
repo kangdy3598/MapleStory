@@ -18,10 +18,6 @@ CEntity::CEntity(const CEntity&)
 
 CEntity::~CEntity()
 {
-	SAFE_DELETE(m_CFileRead);
-	SAFE_DELETE(m_CObjectManager);
-	SAFE_DELETE(m_CUIManager);
-	SAFE_DELETE(m_CKeyconfig);
 }
 
 void CEntity::Initialize(HWND _hwnd, RECT _rect, int _screenWidth, int _screenHeight)
@@ -44,7 +40,8 @@ void CEntity::Initialize(HWND _hwnd, RECT _rect, int _screenWidth, int _screenHe
 	if (!m_CUIManager)
 		return;
 
-	m_CUIManager->Initialize(GetDC(_hwnd), _screenWidth, _screenHeight, m_CFileRead, m_CKeyconfig);
+	m_CUIManager->Initialize(GetDC(_hwnd), _screenWidth, _screenHeight,
+							 m_CFileRead, m_CKeyconfig);
 
 	
 }
@@ -57,6 +54,8 @@ void CEntity::Release()
 
 	SAFE_DELETE(m_CObjectManager);
 	SAFE_DELETE(m_CUIManager);
+	//SAFE_DELETE(m_CKeyconfig);
+	SAFE_DELETE(m_CFileRead);
 }
 
 void CEntity::Update(bool _keyboardState[256], float _fTickTime)

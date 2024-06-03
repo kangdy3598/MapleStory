@@ -131,7 +131,7 @@ void CKeyconfig::InitKeyValue()
 	m_SlotInfo[SLOT_WINDOW_KEYCONFIG].keyValue = VK_F3;
 	m_SlotInfo[SLOT_ACTION_PICKUP].keyValue = VK_F2;// KEY_A;
 	m_SlotInfo[SLOT_ACTION_JUMP].keyValue = VK_ESCAPE;
-	
+	//m_SlotInfo[SLOT_SKILL_ULTIMATE].keyValue = KEY_A;
 	
 	////////////////////////////////////////////////////////////
 	m_KeyInfo[0].keyValue = VK_ESCAPE;

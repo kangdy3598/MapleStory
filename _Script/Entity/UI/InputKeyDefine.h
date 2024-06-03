@@ -5,6 +5,7 @@
 #define SLOT_WINDOW_KEYCONFIG    2
 #define SLOT_ACTION_PICKUP	     3
 #define SLOT_ACTION_JUMP	     4
+#define SLOT_SKILL_ULTIMATE     5
 
 // KEY
 #define KEY_A				 65

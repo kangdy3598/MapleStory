@@ -23,6 +23,7 @@ public:
 public:
 
 private:
+	CFileRead* m_skillIconFile;
 	CKeyconfig* m_CKeyconfig;
 	CSkillWindow* m_CSkillWindow;
 

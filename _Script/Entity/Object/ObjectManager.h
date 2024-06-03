@@ -7,6 +7,7 @@ enum eStateList
 	IDLE,
 	WALK,
 	JUMP,
+	SKILL_ULTIMATE,
 };
 
 class CObjectManager

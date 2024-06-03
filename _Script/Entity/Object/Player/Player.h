@@ -23,7 +23,9 @@ public:
 	POSITION GetPosition() { return m_nowPosition; }
 	void SetPosition(POSITION _position) { m_nowPosition = _position; }
 
+	CSkillEffect* GetSkillEffect() { return m_skillEffect; }
 private:
+	void ShowTextPlayerInfo(HDC _mem1dc);
 	void SetGravity(float _fTickTime);
 
 public:

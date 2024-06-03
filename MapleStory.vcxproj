@@ -34,6 +34,7 @@
     <ClCompile Include="_Script\Entity\Object\Player\State\PlayerIdle.cpp" />
     <ClCompile Include="_Script\Entity\Object\Player\State\PlayerJump.cpp" />
     <ClCompile Include="_Script\Entity\Object\Player\State\PlayerWalk.cpp" />
+    <ClCompile Include="_Script\Entity\Object\Player\State\Skill\PlayerUltimateDrive.cpp" />
     <ClCompile Include="_Script\Entity\Object\StateManager.cpp" />
     <ClCompile Include="_Script\Entity\UI\Keyconfig.cpp" />
     <ClCompile Include="_Script\Entity\UI\UIManager.cpp" />
@@ -56,6 +57,7 @@
     <ClInclude Include="_Script\Entity\Object\Player\State\PlayerIdle.h" />
     <ClInclude Include="_Script\Entity\Object\Player\State\PlayerJump.h" />
     <ClInclude Include="_Script\Entity\Object\Player\State\PlayerWalk.h" />
+    <ClInclude Include="_Script\Entity\Object\Player\State\Skill\PlayerUltimateDrive.h" />
     <ClInclude Include="_Script\Entity\Object\StateManager.h" />
     <ClInclude Include="_Script\Entity\UI\InputKeyDefine.h" />
     <ClInclude Include="_Script\Entity\UI\Keyconfig.h" />

@@ -27,12 +27,16 @@ void CSkillEffect::Update(bool _keyboardState[256])
 {
 }
 
-void CSkillEffect::Render(HDC _mem1dc, HDC _mem2dc)
+void CSkillEffect::Render(POSITION _playerPos, HDC _mem1dc, HDC _mem2dc)
 {
 	if (!m_bIsActive)
 		return;
 
-	//HBITMAP oldBit1 = (HBITMAP)SelectObject(_mem2dc, m_spriteAtlas);
-	Rectangle(_mem1dc, 50, 50, 180, 180);
-	//BitBlt(_mem1dc, 0, 0, 1988, 512, _mem2dc, 0, 0, SRCCOPY);
+	HBITMAP oldBit1 = (HBITMAP)SelectObject(_mem2dc, m_spriteAtlas);
+	BitBlt(_mem1dc, 
+		_playerPos.x - 98 / 2 + (-1015 / 2),
+		_playerPos.y - 75 / 2 + (-677/ 2),
+		1015, 677,
+		_mem2dc, 0, 0,
+		SRCCOPY);
 }
